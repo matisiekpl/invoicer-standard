@@ -1,6 +1,7 @@
 ﻿using Invoicer.Standard.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Invoicer.Standard.Services
 {
@@ -97,5 +98,12 @@ namespace Invoicer.Standard.Services
         /// <param name="filename">Filename of the PDF that will be created</param>
         /// <param name="password">Leave null (default) or set a password</param>
         void Save(string filename = null, string password = null);
+
+        /// <summary>
+        /// Save document to a stream
+        /// </summary>
+        /// <param name="filename">Stream to save file to</param>
+        /// <param name="password">Leave null (default) or set a password</param>
+        void Save(Stream filename, string password = null);
     }
 }

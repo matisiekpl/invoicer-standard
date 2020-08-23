@@ -4,6 +4,7 @@ using Invoicer.Standard.Services.Impl;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 
 namespace Invoicer.Standard.Services
 {
@@ -127,6 +128,11 @@ namespace Invoicer.Standard.Services
             if (filename == null || !System.IO.Path.HasExtension(filename))
                 filename = System.IO.Path.ChangeExtension(Invoice.Reference, "pdf");
             new PdfInvoice(Invoice).Save(filename, password);
+        }
+
+        public void Save(Stream stream, string password = null)
+        {
+            new PdfInvoice(Invoice).Save(stream, password);
         }
     }
 }
