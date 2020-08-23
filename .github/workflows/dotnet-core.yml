@@ -27,5 +27,5 @@ jobs:
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         # Filepath of the project to be packaged, relative to root of repository
-        PROJECT_FILE_PATH: Invoicer.Standard.csproj
-        NUGET_KEY: oy2ftzwl3f3drl6otdha7rdqe5fxxoiehk4srvvv6cqtaa
+        PROJECT_FILE_PATH: Invoicer.Standard/Invoicer.Standard.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
