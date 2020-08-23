@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Gavin Duffy</Authors>
+    <Company>Tapit Labs Ltd</Company>
+    <Version>0.1.1</Version>
+    <PackageProjectUrl>https://github.com/TapitLabsLtd/invoicer-standard</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TapitLabsLtd/invoicer-standard</RepositoryUrl>
+    <Description>Port of Invoicer project, https://github.com/simonray/Invoicer by @simonray, to .NET Standard.</Description>
   </PropertyGroup>
 
   <ItemGroup>
