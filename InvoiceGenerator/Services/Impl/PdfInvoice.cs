@@ -1,13 +1,13 @@
-﻿using Invoicer.Standard.Helpers;
-using Invoicer.Standard.Models;
+﻿using System;
+using System.IO;
+using System.Text;
+using InvoiceGenerator.Helpers;
+using InvoiceGenerator.Models;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.Rendering;
 using PdfSharp.Pdf.Security;
-using System;
-using System.IO;
-using System.Text;
 
-namespace Invoicer.Standard.Services.Impl
+namespace InvoiceGenerator.Services.Impl
 {
     public partial class PdfInvoice
     {

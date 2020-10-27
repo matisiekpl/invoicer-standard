@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Invoicer.Standard.Models
+namespace InvoiceGenerator.Models
 {
     public class DetailRow
     {

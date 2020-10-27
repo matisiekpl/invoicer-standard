@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
-namespace Invoicer.Standard.Models
+namespace InvoiceGenerator.Models
 {
     public class Invoice
     {

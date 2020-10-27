@@ -1,4 +1,4 @@
-﻿namespace Invoicer.Standard.Models
+﻿namespace InvoiceGenerator.Models
 {
     public class TotalRow
     {

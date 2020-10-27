@@ -1,10 +1,10 @@
-﻿using Invoicer.Standard.Helpers;
-using Invoicer.Standard.Models;
+﻿using InvoiceGenerator.Helpers;
+using InvoiceGenerator.Models;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.DocumentObjectModel.Shapes;
 using MigraDoc.DocumentObjectModel.Tables;
 
-namespace Invoicer.Standard.Services.Impl
+namespace InvoiceGenerator.Services.Impl
 {
     public partial class PdfInvoice
     {
@@ -13,7 +13,7 @@ namespace Invoicer.Standard.Services.Impl
             HeaderFooter header = Pdf.LastSection.Headers.Primary;
 
             Table table = header.AddTable();
-            double thirdWidth = Pdf.PageWidth() / 3;
+            double thirdWidth = MigraDocHelpers.PageWidth((Document) Pdf) / 3;
 
             table.AddColumn(ParagraphAlignment.Left, thirdWidth * 2);
             table.AddColumn();
@@ -159,7 +159,7 @@ namespace Invoicer.Standard.Services.Impl
 
             row.Cells[0].AddParagraph("PRODUCT", ParagraphAlignment.Left);
             row.Cells[1].AddParagraph("AMOUNT", ParagraphAlignment.Center);
-            row.Cells[2].AddParagraph("VAT %", ParagraphAlignment.Center);
+            row.Cells[2].AddParagraph("VAT", ParagraphAlignment.Center);
             row.Cells[3].AddParagraph("UNIT PRICE", ParagraphAlignment.Center);
             if (Invoice.HasDiscount)
             {
@@ -188,7 +188,7 @@ namespace Invoicer.Standard.Services.Impl
 
             cell = row.Cells[2];
             cell.VerticalAlignment = VerticalAlignment.Center;
-            cell.AddParagraph(item.VAT.ToCurrency(), ParagraphAlignment.Center, "H2-9");
+            cell.AddParagraph("O", ParagraphAlignment.Center, "H2-9");
 
             cell = row.Cells[3];
             cell.VerticalAlignment = VerticalAlignment.Center;

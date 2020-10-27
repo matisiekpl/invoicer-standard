@@ -1,4 +1,4 @@
-﻿namespace Invoicer.Standard.Helpers
+﻿namespace InvoiceGenerator.Helpers
 {
     public static class Utils
     {

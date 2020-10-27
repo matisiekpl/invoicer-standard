@@ -2,7 +2,7 @@
 using MigraDoc.DocumentObjectModel.Shapes;
 using MigraDoc.DocumentObjectModel.Tables;
 
-namespace Invoicer.Standard.Helpers
+namespace InvoiceGenerator.Helpers
 {
     public static class MigraDocHelpers
     {

@@ -1,12 +1,12 @@
-﻿using Invoicer.Standard.Helpers;
-using Invoicer.Standard.Models;
-using Invoicer.Standard.Services.Impl;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using InvoiceGenerator.Helpers;
+using InvoiceGenerator.Models;
+using PdfInvoice = InvoiceGenerator.Services.Impl.PdfInvoice;
 
-namespace Invoicer.Standard.Services
+namespace InvoiceGenerator.Services
 {
     public class InvoicerApi : IInvoicerApi
     {

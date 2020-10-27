@@ -1,13 +1,12 @@
-﻿using Invoicer.Standard.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using InvoiceGenerator.Models;
 
-namespace Invoicer.Standard.Services
+namespace InvoiceGenerator.Services
 {
     public interface IInvoicerApi : IInvoicerOptions
     {
-
     }
 
     public interface IInvoicerOptions : IInvoicerActions

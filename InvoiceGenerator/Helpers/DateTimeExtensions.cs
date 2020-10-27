@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Invoicer.Standard.Helpers
+namespace InvoiceGenerator.Helpers
 {
     public static class DateTimeExtensions
     {
