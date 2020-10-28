@@ -5,7 +5,8 @@ using InvoiceGenerator.Helpers;
 using InvoiceGenerator.Models;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.Rendering;
-using PdfSharp.Pdf.Security;
+using PdfSharpCore.Pdf.Security;
+using PdfSecuritySettings = PdfSharp.Pdf.Security.PdfSecuritySettings;
 
 namespace InvoiceGenerator.Services.Impl
 {
